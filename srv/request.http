@@ -1,0 +1,135 @@
+http://localhost:4004/odata/v4/catalog/ProductsSrv
+###
+
+POST http://localhost:4004/odata/v4/catalog/createEmployee
+Content-Type: application/json
+
+{
+    "Currency_code":"USD",
+    "ID":"1e8b1a0b-3986-4b3b-8s90-fdf7fa3339e4",
+    "accountNUmber":null,
+    "bankId":null,
+    "bankName":null,
+    "email":null,
+    "gender":"M",
+    "language":"E",
+    "loginName":"darshan",
+    "nameFirst":"vansh",
+    "nameIntials":null,
+    "nameLast":"KN",
+    "nameMiddle":null,
+    "phoneNumber":"87665776733",
+    "salaryAmount":"45000"
+}
+###
+
+PUT http://localhost:4004/odata/v4/catalog/EmployeeSrv/1e8b1a0b-3986-4b3b-8s90-fdf7fa3339e4
+Content-Type: application/json
+
+{
+    "salaryAmount": "2000000.00",
+    "Currency_code":"USD"
+}
+###
+
+PUT http://localhost:4004/odata/v4/catalog/ProductsSrv/74867AD200E41EDBA5D8B06B26EB4052
+Content-Type: application/json
+
+{
+    "PRICE": "20000.00"
+}
+###
+
+PUT http://localhost:4004/odata/v4/catalog/AdressSrv/74867AD200E41EDBA5D8B06885668052
+Content-Type: application/json
+ 
+{
+    "COUNTRY": "IN"
+}
+###
+PUT http://localhost:4004/odata/v4/catalog/EmployeeSrv/1e8b1a0b-3986-4b3b-8s90-fdf7fa3339e4
+Content-Type: application/json
+ 
+{
+    "phoneNumber": "+9442071234567"
+}
+###
+ PUT http://localhost:4004/odata/v4/catalog/EmployeeSrv/1e8b1a0b-3986-4b3b-8s90-fdf7fa3339e4
+Content-Type: application/json
+ 
+{
+    "phoneNumber": "+9442071234567"
+}
+ 
+ 
+###
+http://localhost:4004/odata/v4/catalog/ProductsSrv/$count
+###
+
+http://localhost:4004/odata/v4/catalog/ProductsSrv?$top=10
+###
+
+http://localhost:4004/odata/v4/catalog/ProductsSrv?$top=10&$skip=10
+
+###
+
+
+http://localhost:4004/odata/v4/catalog/ProductsSrv?$filter=CATEGORY eq 'Notebooks'&DIM_UNIT eq 'CM'
+###
+http://localhost:4004/odata/v4/catalog/ProductsSrv?$select=PRODUCT_ID,DESCRIPTION,CATEGORY,PRICE
+###
+
+http://localhost:4004/odata/v4/catalog/ProductsSrv?$orderby=PRODUCT_ID desc
+###
+
+http://localhost:4004/odata/v4/catalog/ProductsSrv('74867AD200E41EDBA5D8B06B26F8C052')/PRODUCT_ID
+###
+http://localhost:4004/odata/v4/catalog/ProductsSrv('74867AD200E41EDBA5D8B06B26F8C052')/PRODUCT_ID/$value
+###
+
+https://services.odata.org/V4/Northwind/Northwind.svc/Categories
+
+###
+https://services.odata.org/V4/Northwind/Northwind.svc/Customers?$filter=City eq 'London'&$select=ContactName,CustomerID,CompanyName
+###
+
+https://services.odata.org/V4/Northwind/Northwind.svc/Suppliers?filter=FAX ne null
+###
+
+GET http://localhost:4004/odata/v4/catalog/getHighestSalariedEmployees()
+###
+
+GET http://localhost:4004/odata/v4/catalog/getHighestPricedProducts()
+###
+
+POST http://localhost:4004/odata/v4/catalog/EmployeeSrv
+Content-Type: application/json
+ 
+{
+    "Currency_code":"USD",
+    "ID":"1e8b1a0b-3986-4b3b-8s90-fdf7fa3339e",
+    "accountNumber":null,
+    "bankId":null,
+    "bankName":null,
+    "email":null,
+    "gender":"M",
+    "language":"E",
+    "loginName":"darshan",
+    "nameFirst":"vansh",
+    "nameIntials":null,
+    "nameLast":"KN",
+    "nameMiddle":null,
+    "phoneNumber":"87665776733",
+    "salaryAmount":"45000"
+}
+###
+
+GET http://localhost:4004/odata/v4/catalog/EmployeeSrv
+
+###
+GET http://localhost:4004/odata/v4/catalog/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19807FB/top20Employees
+ 
+###
+POST http://localhost:4004/odata/v4/catalog/EmployeeSrv/02BD2137-0890-1EEA-A6C2-BB55C19807FB/IncreaseSal
+###
+GET http://localhost:4004/odata/v4/catalog/getUtilities()

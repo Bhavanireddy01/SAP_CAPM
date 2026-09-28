@@ -1,0 +1,23 @@
+{
+    "SAP HANA Database Explorer.ShowXsAdvancedConnections": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:poapplication}/db.sqlite",
+            "name": "Hii"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "hyyyy",
+            "database": "${workspaceFolder:poapplication}/db.sqlite"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "m1",
+            "database": "${workspaceFolder:poapplication}/db.sqlite"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+studentId,studentName,fatherName,motherName,contactNo,fee,currency,city,country,abc_classId
+1,Ravi Kumar,Suresh Kumar,Latha Devi,9876543210,5000,INR,Chennai,India,101
+2,Priya Sharma,Raj Sharma,Meena Sharma,9876543211,5500,INR,Bangalore,India,102
+3,Arjun Singh,Mohan Singh,Anita Singh,9876543212,6000,INR,Hyderabad,India,103
+4,Sneha Reddy,Ramesh Reddy,Sunitha Reddy,9876543213,5200,INR,Vijayawada,India,101
+5,Rohit Gupta,Mahesh Gupta,Kavitha Gupta,9876543214,5800,INR,Delhi,India,102
+6,Anjali Verma,Vinod Verma,Pooja Verma,9876543215,6100,INR,Mumbai,India,103
+7,Kiran Kumar,Satish Kumar,Radha Kumari,9876543216,5400,INR,Pune,India,101
+8,Divya Nair,Gopal Nair,Leela Nair,9876543217,5700,INR,Kochi,India,102
+9,Rahul Das,Subhash Das,Sarita Das,9876543218,6300,INR,Kolkata,India,103
+10,Meera Joshi,Ashok Joshi,Shobha Joshi,9876543219,5900,INR,Jaipur,India,101
